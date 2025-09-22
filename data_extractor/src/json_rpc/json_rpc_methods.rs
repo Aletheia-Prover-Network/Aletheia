@@ -6,13 +6,13 @@ use reqwest::{Client, Error as ReqwestError};
 use crate::types::types::{AccountProof, Block, Transaction, TransactionOrHash, TransactionReceipt, AccountState, BlockWitness};
 
 
-const RPC_URL: &str = "http://127.0.0.1:8545";
+const L2_RPC_URL: &str = "http://127.0.0.1:8545";
 
 
 
 pub async fn rpc_batch(client: &Client, calls: Vec<serde_json::Value>) -> Result<Vec<serde_json::Value>, ReqwestError> {
     let resp = client
-        .post(RPC_URL)
+        .post(L2_RPC_URL)
         .json(&calls)
         .timeout(Duration::from_secs(10))
         .send()
@@ -31,7 +31,7 @@ pub async fn get_block(client: &Client, block_number: &str, full: bool) -> Resul
         "id": 1
     });
     let resp = client
-        .post(RPC_URL)
+        .post(L2_RPC_URL)
         .json(&req)
         .timeout(Duration::from_secs(10))
         .send()
@@ -49,7 +49,7 @@ pub async fn get_transaction_receipt(client: &Client, tx_hash: &str) -> Result<T
         "id": 1
     });
     let resp = client
-        .post(RPC_URL)
+        .post(L2_RPC_URL)
         .json(&req)
         .timeout(Duration::from_secs(10))
         .send()
@@ -95,7 +95,7 @@ pub async fn get_account_proof(
         "id": 1
     });
     let resp = client
-        .post(RPC_URL)
+        .post(L2_RPC_URL)
         .json(&req)
         .timeout(Duration::from_secs(10))
         .send()
