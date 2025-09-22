@@ -1,7 +1,7 @@
 use std::collections::{HashMap, HashSet};
 use reqwest::{Client, Error as ReqwestError};
-use Aletheia::types::types::{TransactionOrHash, BlockWitness};
-use Aletheia::json_rpc::json_rpc_methods::{rpc_batch, get_block, get_transaction_receipt, get_account_state, get_account_proof};
+use data_extractor::types::types::{TransactionOrHash, BlockWitness};
+use data_extractor::json_rpc::json_rpc_methods::{rpc_batch, get_block, get_transaction_receipt, get_account_state, get_account_proof};
 
 
 
