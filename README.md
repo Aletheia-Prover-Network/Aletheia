@@ -269,6 +269,12 @@ This positions **Aletheia Prover Network** as a **pioneering infrastructure proj
 
 ### Installation  
 
+To test and run the **Aletheia Prover Network**, we recommend using a **local Optimistic Rollup setup**.  
+👉 Follow the official Optimism docs: [Create an L2 Rollup](https://docs.optimism.io/operators/chain-operators/tutorials/create-l2-rollup)  
+
+This avoids rate limits and disabled RPC methods from deployed rollups (e.g., Base, OP Mainnet).  
+
+
 ```bash
 # Clone the repo
 git clone https://github.com/Aletheia-Prover-Network/Aletheia.git
