@@ -28,6 +28,7 @@
 - [📖 Project Summary](#-project-summary)  
 - [▶️ How to Run the Project](#️-how-to-run-the-project)  
 - [📊 System Architecture (Diagram)](#-system-architecture-diagram)  
+-  [🚀 Roadmap](#-roadmap)
 - [📜 License](#-license)  
 - [🤝 Contributing](#-contributing)  
 
@@ -300,6 +301,36 @@ node app.js -- for zkverifyjs
 
 
 ```
+
+## 🚀 Roadmap
+
+## 🗺️ Roadmap  
+
+### Phase 1 — Research & Prototyping ✅  
+- Study Optimistic Rollups and zkRollups at a codebase level  
+- Build core modules (`data_extractor`, `aletheia_proof_generation`, `proof_verification`)  
+- Integrate with **zkVerify** for proof validation  
+
+### Phase 2 — Local Rollup Testing 🧪  
+- Run against a **local Optimistic Rollup** environment  
+- Benchmark proof generation & verification performance  
+- Ensure seamless end-to-end flow (extract → prove → verify)  
+
+### Phase 3 — Network Integration 🌐  
+- Connect to public L2 testnets (Optimism, Base, Scroll)  
+- Implement lightweight Ethereum L1 verifier contract  
+- Validate proofs with **zkVerify marketplace**  
+
+### Phase 4 — Decentralized Prover Network 🔗  
+- Expand to a **distributed prover network**  
+- Incentivize participation (staking/rewards model)  
+- Enhance fault tolerance & prover diversity  
+
+### Phase 5 — Production Launch 🚀  
+- Deploy fully decentralized Aletheia Prover Network  
+- Provide SDKs & APIs for dApps and rollups  
+- Continuous monitoring, upgrades, and optimizations  
+
 
 ## 📜 License  
 
