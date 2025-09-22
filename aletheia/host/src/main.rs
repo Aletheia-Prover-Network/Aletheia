@@ -19,7 +19,7 @@ fn main() {
         .with_env_filter(tracing_subscriber::filter::EnvFilter::from_default_env())
         .init();
 
-    let block_state_data_input = fs::read_to_string("../.././block_proof.json").unwrap();
+    let block_state_data_input = fs::read_to_string("../data_extractor/block_proof.json").unwrap();
     
     // println!("This is the read file state {}", block_state);
 
