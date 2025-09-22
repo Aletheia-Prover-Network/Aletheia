@@ -275,8 +275,24 @@ git clone https://github.com/Aletheia-Prover-Network/Aletheia.git
 
 cd Aletheia
 
-# Install dependencies
-pnpm install
+### 🚀 Run the Modules  
+
+#### 🔹 `data_extractor` (Rust)  
+Extracts L2 block data & witnesses.  
+
+```bash
+cd data_extractor
+cargo run
+
+cd aletheia
+RISC0_DEV_MODE=0 cargo run --release
+
+cd proof_verification
+node index.js -- for zkverify relayer
+node app.js -- for zkverifyjs
+
+
+
 ```
 
 ## 📜 License  
