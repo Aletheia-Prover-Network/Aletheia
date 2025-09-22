@@ -302,9 +302,7 @@ node app.js -- for zkverifyjs
 
 ```
 
-## 🚀 Roadmap
-
-## 🗺️ Roadmap  
+## 🗺️ Roadmap 
 
 ### Phase 1 — Research & Prototyping ✅  
 - Study Optimistic Rollups and zkRollups at a codebase level  
