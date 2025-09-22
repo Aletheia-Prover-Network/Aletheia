@@ -19,23 +19,12 @@ fn main() {
         .with_env_filter(tracing_subscriber::filter::EnvFilter::from_default_env())
         .init();
 
-    // An executor environment describes the configurations for the zkVM
-    // including program inputs.
-    // A default ExecutorEnv can be created like so:
-    // `let env = ExecutorEnv::builder().build().unwrap();`
-    // However, this `env` does not have any inputs.
-    //
-    // To add guest input to the executor environment, use
-    // ExecutorEnvBuilder::write().
-    // To access this method, you'll need to use ExecutorEnv::builder(), which
-    // creates an ExecutorEnvBuilder. When you're done adding input, call
-    // ExecutorEnvBuilder::build().
-
-    let block_state = fs::read_to_string("../.././block_proof.json").unwrap();
+    let block_state_data_input = fs::read_to_string("../.././block_proof.json").unwrap();
+    
     // println!("This is the read file state {}", block_state);
 
     let env = ExecutorEnv::builder()
-        .write(&block_state)
+        .write(&block_state_data_input)
         .unwrap()
         .build()
         .unwrap();
